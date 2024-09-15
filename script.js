@@ -41,7 +41,7 @@ const getWeather = (city) => {
         new Date(response.sys.sunrise * 1000).toLocaleTimeString() || "-";
       sunset.innerHTML =
         new Date(response.sys.sunset * 1000).toLocaleTimeString() || "-";
-      wind_deg.innerHTML = response.wind.deg + "Km/hr" || "-";
+      wind_deg.innerHTML = response.wind.deg + "°" || "-";
       wind_speed.innerHTML = response.wind.speed || "-";
       //   country.innerHTML = response.sys.country || "-";
     })
